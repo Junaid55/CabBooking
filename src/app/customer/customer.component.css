@@ -1,0 +1,103 @@
+/* <section class="vh-100" style="background-color: #eee;">
+<div class="container h-100">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-lg-12 col-xl-20">
+      <div class="card text-black" style="border-radius: 25px;">
+        <div class="card-body p-md-5">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+              <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Driver Sign up</p>
+            <div >
+            <form [formGroup]="empForm" (ngSubmit)="OnSubmit()" class="mx-1 mx-md-4">
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <div class="form-outline flex-fill mb-0">
+                                            <mat-form-field appearance="fill" style="margin-right: 10px;">
+                                                <mat-label>FullName</mat-label>
+                                                <mat-icon matSuffix class="material-icon">people</mat-icon>
+                                                <input matInput placeholder="Enter FullName" formControlName="name">
+                                                <mat-error
+                                                    *ngIf="empForm.controls['name'].invalid && empForm.controls['name'].hasError('required')">You
+                                                    must enter a atleat 6 character</mat-error>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+
+                                    <div class="example-container">
+                                        <div class="d-flex flex-row align-items-center mb-4">
+
+                                            <div class="form-outline flex-fill mb-0">
+                                                <mat-form-field appearance="fill">
+                                                    <mat-label>Enter your email</mat-label>
+                                                    <mat-icon matSuffix class="material-icon">email</mat-icon>
+                                                    <input matInput placeholder="pat@example.com"
+                                                        formControlName="email" required>
+                                                    <mat-error
+                                                        *ngIf="empForm.controls['email'].invalid && empForm.controls['email'].hasError('required')">You
+                                                        must enter a valid email</mat-error>
+                                                </mat-form-field>
+                                            </div>
+                                        </div>
+
+
+                                        <mat-form-field appearance="fill">
+                                            <mat-label>Enter your password</mat-label>
+                                            <input matInput [type]="hide ? 'password' : 'text'"
+                                                formControlName="password">
+                                            <button mat-icon-button matSuffix (click)="hide = !hide"
+                                                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                            </button>
+                                            <mat-error
+                                                *ngIf="empForm.controls['password'].invalid && empForm.controls['password'].hasError('required')">
+                                                Valid Password only Alphabet & numeric </mat-error>
+                                        </mat-form-field>
+                                    </div>
+
+
+                                    <div>
+
+                                        <mat-form-field appearance="fill">
+                                            <mat-label>Mobile No</mat-label>
+                                            <mat-icon matSuffix class="material-icon">phone</mat-icon>
+                                            <input matInput formControlName="mob">
+                                            <mat-error
+                                                *ngIf="empForm.controls['mob'].invalid && empForm.controls['mob'].hasError('required')">You
+                                                must enter a Mobile No.</mat-error>
+                                        </mat-form-field>
+                                    </div>
+                                    <button mat-raised-button color="primary"
+                                        style="margin-top: 20px;">Submit</button>
+                                    </form>
+
+                                </div>
+                
+                                </div>
+                
+                                <div class="col-md-10 col-lg-3 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                
+                 
+                
+                                  <img src="https://www.drivers4me.com/static/assets/images/NewHomeArt.png"
+                
+                                    class="img-fluid" alt="Sample image">
+                
+                 
+                
+                                </div>
+                
+                              </div>
+                
+                            </div>
+                
+                          </div>
+                
+                        </div>
+                
+                      </div>
+                
+                    </div>
+                
+                  </section> */
+.main-container{
+  padding: 30px;
+}
