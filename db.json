@@ -6,6 +6,48 @@
       "author": "typicode"
     }
   ],
+  "rideDB": [
+    {
+      "pickup": "Indore, Madhya Pradesh, India",
+      "drop": "Shahdol, Madhya Pradesh, India",
+      "driver_id": 3,
+      "user_id": 1,
+      "amount": 119,
+      "id": 1
+    },
+    {
+      "pickup": "Ujjain, Madhya Pradesh, India",
+      "drop": "Indore, Madhya Pradesh, India",
+      "driver_id": 2,
+      "user_id": 1,
+      "amount": 350,
+      "id": 2
+    },
+    {
+      "pickup": "Indore, Madhya Pradesh, India",
+      "drop": "Ujjain, Madhya Pradesh, India",
+      "driver_id": 3,
+      "user_id": 1,
+      "amount": 285,
+      "id": 3
+    },
+    {
+      "pickup": "Ujjain - Indore Rd, Rajwada, Indore, Madhya Pradesh, India",
+      "drop": "Sanwer, Madhya Pradesh 453551, India",
+      "driver_id": 4,
+      "user_id": 1,
+      "amount": 230,
+      "id": 4
+    },
+    {
+      "pickup": "Ujjain, Madhya Pradesh, India",
+      "drop": "Indore, Madhya Pradesh, India",
+      "driver_id": 5,
+      "user_id": 1,
+      "amount": 228,
+      "id": 5
+    }
+  ],
   "comments": [
     {
       "id": 1,
@@ -18,7 +60,7 @@
       "id": 1,
       "name": "Aman Demo",
       "email": "aman@gmail.com",
-      "cartype": "car",
+      "carname": "car",
       "carno": "mpp",
       "rate": "45",
       "password": "aman@1234",
@@ -52,7 +94,7 @@
     },
     {
       "id": 4,
-      "name": "Umesh Dangi",
+      "name": "Umesh Ji",
       "email": "umeshdangi@gmail.com",
       "carname": "Alto",
       "carno": "MP 09 UU 8888",
@@ -64,12 +106,12 @@
     },
     {
       "id": 5,
-      "name": "Umesh Dangi",
-      "email": "umeshdangi@gmail.com",
+      "name": "Ramesh Bhai",
+      "email": "rameshbhai@gmail.com",
       "carname": "Alto",
-      "carno": "MP 09 UU 8888",
-      "rate": 10,
-      "password": "umesh@1234",
+      "carno": "MP 09 UU 9999",
+      "rate": 15,
+      "password": "ramesh@1234",
       "gender": "M",
       "dob": "1999-11-04T18:30:00.000Z",
       "mob": "1234567891"

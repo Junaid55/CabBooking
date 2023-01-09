@@ -5,10 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
 import { MaterialModule } from './shared/materialmodule';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DriverComponent } from './driver/driver.component';
 import { DriverRegisteredDialogComponent } from './driver-registered-dialog/driver-registered-dialog.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { HomeComponent } from './home/home.component';
+import { DialogBookingFormComponent } from './dialog-booking-form/dialog-booking-form.component';
+import { CarVidComponent } from './car-vid/car-vid.component';
+import { RideConfirmComponent } from './ride-confirm/ride-confirm.component';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -21,7 +26,11 @@ import { VerifyEmailAddressComponent } from './verify-email-address/verify-email
 @NgModule({
   declarations: [AppComponent, CustomerComponent,
         DriverComponent,
-        DriverRegisteredDialogComponent, VerifyEmailAddressComponent],
+        DriverRegisteredDialogComponent,
+        HomeComponent,
+        DialogBookingFormComponent,
+        CarVidComponent,
+        RideConfirmComponent, VerifyEmailAddressComponent],
   providers: [],
   bootstrap: [AppComponent],
   imports: [
@@ -31,6 +40,8 @@ import { VerifyEmailAddressComponent } from './verify-email-address/verify-email
     MaterialModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+        GoogleMapsModule,
+        FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
