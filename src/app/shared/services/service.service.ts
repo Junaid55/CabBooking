@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { CustomerForm } from './Customer';
+import { CustomerForm } from '../models';
+import { AuthService } from './auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -8,9 +9,13 @@ import { CustomerForm } from './Customer';
 export class ServiceService {
 
   url:string = "http://localhost:3000";
-  constructor(public http:HttpClient) { }
-  EmpPost(emp:CustomerForm){
+  constructor(public http:HttpClient, private authService:AuthService) { }
+
+  CustomerPost(emp:CustomerForm){
     console.log(emp);
+    
+    this.authService.SignUp(emp.email, emp.password);
+     
    return this.http.post<CustomerForm>(this.url+"/Customer",emp);
   }
 }

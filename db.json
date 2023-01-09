@@ -1,0 +1,18 @@
+{
+  "Customer": [
+    {
+      "id": 1,
+      "name": "Divya Vyas",
+      "email": "dfsfdkjg@dsdjk.com",
+      "password": "qwertyuiop",
+      "mob": "9876543210"
+    },
+    {
+      "id": 2,
+      "name": "Divya Vyas",
+      "email": "dskjf@d.com",
+      "password": "qwertyuiop",
+      "mob": "7890654321"
+    }
+  ]
+}

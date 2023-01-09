@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ServiceService } from '../service.service';
+import { AuthService } from '../shared/services/auth.service';
+import { ServiceService } from '../shared/services/service.service';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { ServiceService } from '../service.service';
   styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent implements OnInit{
-  constructor(private fb:FormBuilder,private cs:ServiceService){}
+  constructor(private fb:FormBuilder,private cs:ServiceService, private authService:AuthService){}
 
   hide = true;
   empForm!:FormGroup;
@@ -28,8 +29,9 @@ export class CustomerComponent implements OnInit{
   
   OnSubmit(){
     
-     if(this.empForm.valid){
-     this.cs.EmpPost(this.empForm.value).subscribe();
+    if(this.empForm.valid){
+      
+     this.cs.CustomerPost(this.empForm.value).subscribe();
       console.log(this.empForm.value);
       alert("Record added");
     }
