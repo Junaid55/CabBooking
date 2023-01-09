@@ -1,0 +1,22 @@
+.center {
+
+  display: flex;
+   
+    margin-top: 90px;
+
+    /* align-items: flex-start;
+    z-index: -1; */
+  }
+  .fields
+  {
+ 
+    margin: 10px;
+    text-align: center;
+    width: 400px;
+    
+  }
+  .img
+  {
+    margin-top: -20px;
+  }
+ 
