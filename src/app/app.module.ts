@@ -24,13 +24,17 @@ import { environment } from '../environments/environment';
 import { VerifyEmailAddressComponent } from './verify-email-address/verify-email-address.component';
 
 @NgModule({
-  declarations: [AppComponent, CustomerComponent,
-        DriverComponent,
-        DriverRegisteredDialogComponent,
-        HomeComponent,
-        DialogBookingFormComponent,
-        CarVidComponent,
-        RideConfirmComponent, VerifyEmailAddressComponent],
+  declarations: [
+    AppComponent,
+    CustomerComponent,
+    DriverComponent,
+    DriverRegisteredDialogComponent,
+    HomeComponent,
+    DialogBookingFormComponent,
+    CarVidComponent,
+    RideConfirmComponent,
+    VerifyEmailAddressComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent],
   imports: [
@@ -40,8 +44,8 @@ import { VerifyEmailAddressComponent } from './verify-email-address/verify-email
     MaterialModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-        GoogleMapsModule,
-        FormsModule,
+    GoogleMapsModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
