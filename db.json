@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "Driverpost": [
+    {
+      "id": 1,
+      "name": "Aman Demo",
+      "email": "aman@gmail.com",
+      "cartype": "car",
+      "carno": "mpp",
+      "rate": "45",
+      "password": "aman@1234",
+      "gender": "M",
+      "dob": "2023-01-19T18:30:00.000Z",
+      "mob": "1234567891"
+    },
+    {
+      "id": 2,
+      "name": "Ankit Lashkari",
+      "email": "ankit.lashkari911@gmail.com",
+      "carname": "car",
+      "carno": "MP 09 AA 1111",
+      "rate": 10,
+      "password": "ankit@1234",
+      "gender": "M",
+      "dob": "2001-01-08T18:30:00.000Z",
+      "mob": "9111221505"
+    },
+    {
+      "id": 3,
+      "name": "Swagat Mehta",
+      "email": "swagat@gmail.com",
+      "carname": "Swift",
+      "carno": "MP 09 SS 9999",
+      "rate": 9,
+      "password": "swagat@1234",
+      "gender": "M",
+      "dob": "2000-04-06T18:30:00.000Z",
+      "mob": "1234567890"
+    },
+    {
+      "id": 4,
+      "name": "Umesh Dangi",
+      "email": "umeshdangi@gmail.com",
+      "carname": "Alto",
+      "carno": "MP 09 UU 8888",
+      "rate": 10,
+      "password": "umesh@1234",
+      "gender": "M",
+      "dob": "1999-11-04T18:30:00.000Z",
+      "mob": "1234567891"
+    },
+    {
+      "id": 5,
+      "name": "Umesh Dangi",
+      "email": "umeshdangi@gmail.com",
+      "carname": "Alto",
+      "carno": "MP 09 UU 8888",
+      "rate": 10,
+      "password": "umesh@1234",
+      "gender": "M",
+      "dob": "1999-11-04T18:30:00.000Z",
+      "mob": "1234567891"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -7,11 +7,16 @@ import { CustomerComponent } from "./customer/customer.component";
 import { MaterialModule } from './materialmodule';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DriverComponent } from './driver/driver.component';
+import { DriverRegisteredDialogComponent } from './driver-registered-dialog/driver-registered-dialog.component';
+
 
 @NgModule({
     declarations: [
         AppComponent,
-        CustomerComponent
+        CustomerComponent,
+        DriverComponent,
+        DriverRegisteredDialogComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
