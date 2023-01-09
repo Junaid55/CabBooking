@@ -1,0 +1,115 @@
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-12 col-xl-10">
+          <div class="card text-black" style="border-radius: 25px;">
+            <div class="card-body p-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+  
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Driver Sign up</p>
+                
+                <div >
+                  <form [formGroup]="driverForm" (ngSubmit)="OnSubmit()">
+
+                    <mat-form-field appearance="fill" style="margin-right: 10px;" >
+                        <mat-label>FullName</mat-label>
+                        <mat-icon matSuffix class="material-icon">people</mat-icon>
+                        <input matInput class="input" placeholder="Enter FullName" formControlName = "name">
+                        
+                        <mat-error *ngIf="driverForm.controls['name'].invalid && driverForm.controls['name'].hasError('required')">You must enter a atleat 6 character</mat-error>
+                    </mat-form-field>
+                    
+  
+                    <mat-form-field appearance="fill">
+                        <mat-label>Enter your email</mat-label>
+                        <mat-icon matSuffix class="material-icon">email</mat-icon>
+                        <input matInput placeholder="pat@example.com" formControlName = "email" required>
+                        <mat-error *ngIf="driverForm.controls['email'].invalid && driverForm.controls['email'].hasError('required')">You must enter a valid email</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Mobile No</mat-label>
+                        <mat-icon matSuffix class="material-icon">phone</mat-icon>
+                        <input matInput formControlName = "mob">
+                        <mat-error *ngIf="driverForm.controls['mob'].invalid && driverForm.controls['mob'].hasError('required')">You must enter a Mobile No.</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" style="margin-right: 10px;">
+                        <mat-label>DOB</mat-label>
+                        <input matInput [matDatepicker]="picker" formControlName = "dob">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                        <mat-error *ngIf="driverForm.controls['dob'].invalid && driverForm.controls['dob'].hasError('required')">You must enter a value</mat-error>
+                    </mat-form-field>
+                    <br>
+
+                    <mat-radio-group aria-label="Select an option" formControlName = "gender" style="margin-left: 10px;">
+                        <mat-label>Gender</mat-label>
+                        <br>
+                        <mat-radio-button value="M">Male</mat-radio-button>
+                        <mat-icon matSuffix class="material-icon">male</mat-icon>
+                        <mat-radio-button value="F">Female</mat-radio-button>
+                        <mat-icon matSuffix class="material-icon">female</mat-icon>
+                        <mat-error *ngIf="driverForm.controls['gender'].hasError('required') && driverForm.controls['gender'].touched">You must enter a value</mat-error>
+                    </mat-radio-group>
+
+  
+                    <mat-form-field appearance="fill">
+                        <mat-label>Enter your password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" formControlName = "password">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                        <mat-error *ngIf="driverForm.controls['password'].invalid && driverForm.controls['password'].hasError('required')"> Valid Password only Alphabet & numeric </mat-error>
+                    </mat-form-field>
+  
+                    <mat-form-field appearance="fill">
+                        <mat-label>Car Name</mat-label>
+                        <mat-icon matSuffix class="material-icon">taxi_alert</mat-icon>
+                        <input matInput formControlName = "carname">
+                        <mat-error *ngIf="driverForm.controls['carname'].invalid && driverForm.controls['carname'].hasError('required')">You must enter a Car Name.</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Car Number</mat-label>
+                        <mat-icon matSuffix class="material-icon">phone</mat-icon>
+                        <input matInput formControlName = "carno">
+                        <mat-error *ngIf="driverForm.controls['carno'].invalid && driverForm.controls['carno'].hasError('required')">You must enter a Car No.</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Rate Par KM</mat-label>
+                        <mat-icon matSuffix class="material-icon">price_change</mat-icon>
+                        <input matInput type="number" formControlName = "rate">
+                        <mat-error *ngIf="driverForm.controls['rate'].invalid && driverForm.controls['rate'].hasError('required')">You must enter a Rate Per KM.</mat-error>
+                    </mat-form-field>
+  
+                    <div class="form-check d-flex justify-content-center mb-5">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                      <label class="form-check-label" for="form2Example3">
+                        I agree all statements in <a href="#!">Terms of service</a>
+                      </label>
+                    </div>
+  
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button mat-raised-button class="button1" color="warn">Register</button>
+                    </div>
+  
+                  </form>
+                </div>
+                </div>
+                <div class="col-md-10 col-lg-3 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+  
+                  <img src="https://www.drivers4me.com/static/assets/images/NewHomeArt.png"
+                    class="img-fluid" alt="Sample image">
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

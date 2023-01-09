@@ -7,6 +7,9 @@ import { CustomerComponent } from './customer/customer.component';
 import { MaterialModule } from './shared/materialmodule';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DriverComponent } from './driver/driver.component';
+import { DriverRegisteredDialogComponent } from './driver-registered-dialog/driver-registered-dialog.component';
+
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
@@ -16,7 +19,9 @@ import { environment } from '../environments/environment';
 import { VerifyEmailAddressComponent } from './verify-email-address/verify-email-address.component';
 
 @NgModule({
-  declarations: [AppComponent, CustomerComponent, VerifyEmailAddressComponent],
+  declarations: [AppComponent, CustomerComponent,
+        DriverComponent,
+        DriverRegisteredDialogComponent, VerifyEmailAddressComponent],
   providers: [],
   bootstrap: [AppComponent],
   imports: [
