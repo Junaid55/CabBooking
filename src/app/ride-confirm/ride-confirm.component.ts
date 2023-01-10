@@ -1,8 +1,8 @@
 import { Component,OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CarVidComponent } from '../car-vid/car-vid.component';
-import { RideDetails } from '../models/RideDetails';
-import { RideServiceService } from '../services/ride-service.service';
+import { RideDetails } from '../shared/models';
+import { RideServiceService } from '../shared/services/ride-service.service';
 
 @Component({
   selector: 'app-ride-confirm',

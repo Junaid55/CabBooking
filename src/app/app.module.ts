@@ -22,6 +22,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { VerifyEmailAddressComponent } from './verify-email-address/verify-email-address.component';
+import { PaymentsComponent } from './payments/payments.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { VerifyEmailAddressComponent } from './verify-email-address/verify-email
     CarVidComponent,
     RideConfirmComponent,
     VerifyEmailAddressComponent,
+    PaymentsComponent,
+    LoginComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

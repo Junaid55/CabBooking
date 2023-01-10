@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../shared/services/auth.service';
-import { ServiceService } from '../shared/services/service.service';
+import { CustomerService } from '../shared/services/customer.service';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { ServiceService } from '../shared/services/service.service';
   styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent implements OnInit{
-  constructor(private fb:FormBuilder,private cs:ServiceService, private authService:AuthService){}
+  constructor(private fb:FormBuilder,private cs:CustomerService, private authService:AuthService){}
 
   hide = true;
   empForm!:FormGroup;

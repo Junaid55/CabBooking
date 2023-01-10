@@ -2,7 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogBookingFormComponent } from '../dialog-booking-form/dialog-booking-form.component';
 import { RideConfirmComponent } from '../ride-confirm/ride-confirm.component';
-import { RideServiceService } from '../services/ride-service.service';
+import { RideServiceService } from '../shared/services/ride-service.service';
 
 @Component({
   selector: 'app-home',

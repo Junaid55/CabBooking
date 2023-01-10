@@ -5,7 +5,7 @@ import {MatDialog} from '@angular/material/dialog';
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceService {
+export class DriverService {
 
   url:string = "http://localhost:3000";
   constructor(public http:HttpClient,public dialog: MatDialog) { }

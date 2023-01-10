@@ -1,8 +1,8 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { RideDetails } from '../models/RideDetails';
 import { RideConfirmComponent } from '../ride-confirm/ride-confirm.component';
-import { RideServiceService } from '../services/ride-service.service';
+import { RideDetails } from '../shared/models';
+import { RideServiceService } from '../shared/services/ride-service.service';
 
 @Component({
   selector: 'app-dialog-booking-form',

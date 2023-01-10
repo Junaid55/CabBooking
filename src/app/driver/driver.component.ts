@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup,FormControl, Validators, FormBuilder } from '@angular/forms';
-import { ServiceService } from '../services/service.service';
+import { DriverService } from '../shared/services/driver.service';
 import {MatDialog} from '@angular/material/dialog';
 import { DriverRegisteredDialogComponent } from '../driver-registered-dialog/driver-registered-dialog.component';
 import { Router,ActivatedRoute } from '@angular/router';
@@ -12,7 +12,7 @@ import { Router,ActivatedRoute } from '@angular/router';
 })
 export class DriverComponent {
 
-  constructor(private fb:FormBuilder,private cs:ServiceService,public dialog: MatDialog,private router:Router){}
+  constructor(private fb:FormBuilder,private cs:DriverService,public dialog: MatDialog,private router:Router){}
 
   driverForm!:FormGroup;
   hide = true;
