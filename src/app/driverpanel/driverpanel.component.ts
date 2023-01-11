@@ -1,10 +1,11 @@
 import { Component,OnInit } from '@angular/core';
-import { Driver } from '../Driverform';
 import { DriverService } from '../shared/services/driver.service';
 import {MatDialog} from '@angular/material/dialog';
 import {AfterViewInit, ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
+import { Driver } from '../shared/models';
+import { AuthService } from '../shared/services/auth.service';
 
 
 export interface PeriodicElement
@@ -30,7 +31,7 @@ export interface PeriodicElement
 })
 export class DriverpanelComponent implements OnInit{
 
-  constructor(private cs:DriverService,public dialog: MatDialog){
+  constructor(private cs:DriverService, public authService:AuthService,public dialog: MatDialog){
 
 
   }
@@ -47,7 +48,7 @@ export class DriverpanelComponent implements OnInit{
   paginator!: MatPaginator;
 
   ngOnInit(){
-      this.cs.GetDriverById(2).subscribe({
+      this.cs.GetDriverById(1).subscribe({
         next:(res)=>{
           console.log(res);
           this.driver=res;
@@ -68,7 +69,7 @@ export class DriverpanelComponent implements OnInit{
             //console.log(this.rides)
             console.log("this iiissss")
             res.forEach((element:any) => {
-              if(element.driver_id==2)
+              if(element.driver_id==1)
               {
                 this.rides.push(element)
                 this.total_ride++;

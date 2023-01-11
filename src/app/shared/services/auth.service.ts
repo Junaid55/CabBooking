@@ -36,7 +36,7 @@ export class AuthService {
   }
 
   // Sign in with email/password
-  SignIn(user : LoginUser) {
+  SignInCustomer(user : LoginUser) {
     return this.afAuth
       .signInWithEmailAndPassword(user.email, user.password)
       .then((result) => {
@@ -49,6 +49,28 @@ export class AuthService {
           if (user) {
             
             this.router.navigate(['book-ride']);
+          }
+        });
+      })
+      .catch((error) => {
+        window.alert(error.message);
+      });
+  }
+
+  // Sign in with email/password
+  SignInDriver(user : LoginUser) {
+    return this.afAuth
+      .signInWithEmailAndPassword(user.email, user.password)
+      .then((result) => {
+
+        
+        
+        this.SetUserData(result.user);
+        this.afAuth.authState.subscribe((user) => {
+          console.warn(user);
+          if (user) {
+            
+            this.router.navigate(['driver-dashboard']);
           }
         });
       })

@@ -31,9 +31,13 @@ export class CustomerService {
    return this.http.post<CustomerForm>(this.url+"/Customer",emp);
   }
 
-  getCustomer():Observable<any>
+  getCustomers():Observable<any>
   {
     return this.http.get<any>(this.url+'/Customer');
+  }
+
+  getCustomer(email:string):Observable<any> {
+    return this.http.get<any>(this.url + `/Customer?email=${email}`);
   }
 
 }
