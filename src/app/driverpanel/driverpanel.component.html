@@ -1,65 +1,188 @@
-
-<div class="row">
-    <div class="col-md-3">
-        <mat-card style="width:300px; height: 750px; background-color: antiquewhite;">
-            <mat-card-content align="center">
-              <div mat-card-avatar class="example-header-image"></div>
+<div class="row" style="background-image:url('assets/cabdriverhome.png'); background-size:cover;" >
+  <!-- background-color:#cde7f7 -->
+  <!--style="background-color:rgb(229, 233, 233);"  -->
+  <div class="col-md-3">
+      <div>
+      <mat-card class="panel1 ">
+          <mat-card-content align="center">
+            <div mat-card-avatar class="example-header-image"></div>
+            
+            <mat-card-title>Driver <br>{{driver.name}}</mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+              <br>
+            <p>
+              <b>Car Number</b> : {{driver.carno}}
+            </p>
+            <p>
+              <b>Car Name</b> : {{driver.carname}}
+            </p>
+            <p>
+              <b>DOB</b> : {{driver.dob}}
+            </p>
+            <p>
+              <b>Mobile No.</b> : {{driver.mob}}
+            </p>
+            <p>
+              <b>Email Id</b> : {{driver.email}}
+            </p>
+            
+          </mat-card-content>
+          
+      </mat-card>
+      
+  </div>
+  </div>
+  <div class="col-md-8">
+      <br>
+      <button mat-raised-button style="float:right; background-color: red;color: white; width: 100px;">Log Out</button>
+      
+      
+      
+      <div class="container">
+          <div class="democard">
+          <mat-card class="shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="background:  linear-gradient(45deg, #63d4bd, #8ce8d6);">
+              <mat-card-content>
+                  <div mat-card-avatar class="example-header-image3"></div>
+                  <mat-card-title>Total No Rides : </mat-card-title>
+  
+                  <h1>{{total_ride}}</h1>
               
-              <mat-card-title>Driver</mat-card-title>
-              <mat-card-subtitle>Vishal Maurya</mat-card-subtitle>
-                <br>
-              <p>
-                <b>Car Number</b> : MP09MI3178
-              </p>
-              <p>
-                <b>Car Name</b> : Swift
-              </p>
-              <h1 style="color: green;">Successfully registered</h1>
-            </mat-card-content>
+                <mat-progress-bar [color]="'warn'" style="background-color: #edff24; color: warn;" mode="determinate" value="{{total_ride}}"></mat-progress-bar>
+                <!-- <button mat-raised-button color="primary">Primary</button>
+                  <button mat-raised-button color="accent">Accent</button>  -->
+              </mat-card-content>
+            </mat-card>
+          </div>
+            <div class="democard">
+            <mat-card  class="shadow-lg p-3 mb-5 bg-body-tertiary" style="background:linear-gradient(45deg, #eacea7, #ebc590);">
+              <mat-card-content>
+                  <div mat-card-avatar class="example-header-image4"></div>
+                  <mat-card-title>Total Earning : </mat-card-title>
+                <h1>{{total_amount}}</h1>
+                <mat-progress-bar [color]="'warn'" style="background-color: #edff24;" mode="determinate" value="50"></mat-progress-bar>
+                <!-- <button mat-raised-button color="primary">Primary</button>
+                  <button mat-raised-button color="accent">Accent</button>  -->
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="democard">
+              <mat-card  class="shadow-lg p-3 mb-5 bg-body-tertiary" style="background: linear-gradient(45deg, #4099ff, #73b4ff);">
+                <mat-card-content>
+                  <div mat-card-avatar class="example-header-image5"></div>
+                    <mat-card-title>Rating :</mat-card-title>
+                    <h1>4.5</h1>
+                    <mat-progress-bar  [color]="'warn'" style="background-color: #edff24;" mode="determinate" value="85"></mat-progress-bar>
+                 
+                  <!-- <button mat-raised-button color="primary">Primary</button>
+                    <button mat-raised-button color="accent">Accent</button>  -->
+                </mat-card-content>
+              </mat-card>
+            </div>
+            <br>
+            <!-- <mat-card class="shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width:300px; height: 150px; margin-top: 20px; margin-left: 20px;">
+              <mat-card-content>
+                  <mat-card-title>Customer</mat-card-title>
+                <mat-card-subtitle>Customer Id : </mat-card-subtitle>
+                <h4>From : {{ride.pickup}}  To : {{ride.drop}}</h4>
+                
+              </mat-card-content>
+            </mat-card> -->
+            
+      </div>
+
+
+      <div class="democard">
+      <!-- <mat-card  class="shadow-lg p-3 mb-5 bg-body-tertiary" (click)="ShowHistory()"style="background: linear-gradient(45deg, #4099ff, #73b4ff);">
+        <mat-card-content>
+            <mat-card-title>Ride History</mat-card-title>
+            <mat-card-subtitle style="color: white;">Customer Id : </mat-card-subtitle>
+              <h4>From : {{ride.pickup}}  To : {{ride.drop}}</h4>
+            <button (click)="ShowHistory()"> ShowHistory</button>
+           <button mat-raised-button color="primary">Primary</button>
+            <button mat-raised-button color="accent">Accent</button>
+        </mat-card-content>
+      </mat-card> -->
+
+
+      <div class="mat-elevation-z8">
+          <table mat-table [dataSource]="dataSource" class="table table-striped">
+        
+            <!-- Position Column -->
+            <ng-container matColumnDef="user_id">
+              <th mat-header-cell *matHeaderCellDef><h2 style="color:white"> User_id</h2> </th>
+              <td mat-cell *matCellDef="let element"> {{element.user_id}} </td>
+            </ng-container>
+        
+            <!-- Name Column -->
+            <ng-container matColumnDef="pickup">
+              <th mat-header-cell *matHeaderCellDef> <h2  style="color:white">Pickup Location</h2> </th>
+              <td mat-cell *matCellDef="let element"> {{element.pickup}} </td>
+            </ng-container>
+        
+            <!-- Weight Column -->
+            <ng-container matColumnDef="drop">
+              <th mat-header-cell *matHeaderCellDef><h2  style="color:white">Drop Location</h2> </th>
+              <td mat-cell *matCellDef="let element"> {{element.drop}} </td>
+            </ng-container>
+        
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="amount">
+              <th mat-header-cell *matHeaderCellDef><h2  style="color:white">Amount</h2> </th>
+              <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+            </ng-container>
+        
+            <tr mat-header-row *matHeaderRowDef="displayedColumns" style="background-color:rgb(146, 141, 141);font-style: italic;"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        
+          <mat-paginator  style="background-color:rgb(146, 141, 141);color: white;"  [pageSizeOptions]="[4, 10, 20]"
+                         showFirstLastButtons
+                         aria-label="Select page of periodic elements">
+          </mat-paginator>
+        </div>
+
+
+
+
+    </div>
+      <!-- <mat-card style="width:1000px; height: 100px; margin-top: 80px;" *ngFor="let ride of rides">
+          <mat-card-content>
+              <mat-card-title>Customer</mat-card-title>
+            <mat-card-subtitle>Customer Id : {{ride.user_id}} </mat-card-subtitle>
+            <h4>From : {{ride.pickup}}  To : {{ride.drop}}</h4>
+           
+          </mat-card-content>
+        </mat-card> -->
+
+        <!-- <mat-card style="width:1000px; height: 100px; margin-top: 80px;">
+          <mat-card-content>
+              <mat-card-title>Customer</mat-card-title>
+            <mat-card-subtitle>Customer Name </mat-card-subtitle>
+            <h4>From City to City</h4>
+            <button mat-raised-button color="primary">Primary</button>
+              <button mat-raised-button color="accent">Accent</button> 
+          </mat-card-content>
         </mat-card>
-    </div>
-    <div class="col-md-8">
-        <br>
-        <button mat-raised-button style="float:right; background-color: red;color: white; width: 100px;">Log Out</button>
-
         <mat-card style="width:1000px; height: 100px; margin-top: 80px;">
-            <mat-card-content>
-                <mat-card-title>Customer</mat-card-title>
-              <mat-card-subtitle>Customer Name </mat-card-subtitle>
-              <h4>From City to City</h4>
-              <button mat-raised-button color="primary">Primary</button>
-                <button mat-raised-button color="accent">Accent</button> 
-            </mat-card-content>
-          </mat-card>
-
-          <mat-card style="width:1000px; height: 100px; margin-top: 80px;">
-            <mat-card-content>
-                <mat-card-title>Customer</mat-card-title>
-              <mat-card-subtitle>Customer Name </mat-card-subtitle>
-              <h4>From City to City</h4>
-              <button mat-raised-button color="primary">Primary</button>
-                <button mat-raised-button color="accent">Accent</button> 
-            </mat-card-content>
-          </mat-card>
-          <mat-card style="width:1000px; height: 100px; margin-top: 80px;">
-            <mat-card-content>
-                <mat-card-title>Customer</mat-card-title>
-              <mat-card-subtitle>Customer Name </mat-card-subtitle>
-              <h4>From City to City</h4>
-              <button mat-raised-button color="primary">Primary</button>
-                <button mat-raised-button color="accent">Accent</button> 
-            </mat-card-content>
-          </mat-card>
-          <mat-card style="width:1000px; height: 100px; margin-top: 80px;">
-            <mat-card-content>
-                <mat-card-title>Customer</mat-card-title>
-              <mat-card-subtitle>Customer Name </mat-card-subtitle>
-              <h4>From City to City</h4>
-              <button mat-raised-button color="primary">Primary</button>
-                <button mat-raised-button color="accent">Accent</button> 
-            </mat-card-content>
-          </mat-card>
-    </div>
-    
+          <mat-card-content>
+              <mat-card-title>Customer</mat-card-title>
+            <mat-card-subtitle>Customer Name </mat-card-subtitle>
+            <h4>From City to City</h4>
+            <button mat-raised-button color="primary">Primary</button>
+              <button mat-raised-button color="accent">Accent</button> 
+          </mat-card-content>
+        </mat-card>
+        <mat-card style="width:1000px; height: 100px; margin-top: 80px;">
+          <mat-card-content>
+              <mat-card-title>Customer</mat-card-title>
+            <mat-card-subtitle>Customer Name </mat-card-subtitle>
+            <h4>From City to City</h4>
+            <button mat-raised-button color="primary">Primary</button>
+              <button mat-raised-button color="accent">Accent</button> 
+          </mat-card-content>
+        </mat-card> -->
+  </div>
+  
 
 </div>
+

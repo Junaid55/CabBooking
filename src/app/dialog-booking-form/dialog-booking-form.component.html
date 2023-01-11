@@ -1,0 +1,34 @@
+
+<div class="center">
+
+    <div>
+    <form >
+        <div class="fields">
+    <mat-form-field appearance="outline">
+        <mat-icon matPrefix >adjust</mat-icon>
+        <input matInput type="text"  placeholder="Enter Pickup" #inputField1 [(ngModel)]="ride.pickup" name="pickup">
+        <mat-icon matSuffix style="color: red;">location_on</mat-icon>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field appearance="outline">
+        <mat-icon matPrefix>adjust</mat-icon>
+        <input matInput type="text"  placeholder="Enter Destination" #inputField2 [(ngModel)]="ride.drop" name="drop">
+        <mat-icon matSuffix style="color: green;">location_on</mat-icon>
+    </mat-form-field>
+
+    <br>
+
+   <button type="button" mat-raised-button (click)="proceedUser()" color="primary">Proceed</button>
+</div>
+</form>
+</div>
+<mat-divider [vertical]="true"></mat-divider>
+<div>
+    <img class="img" src="https://img.freepik.com/premium-vector/application-navigation-there-is-destination-arrive-destination-gps-map_403715-36.jpg?w=1060"style="height: 250px; width: 500px;">
+</div>
+
+</div>
+
+<div class="progress" *ngIf="showLoader"><mat-spinner ></mat-spinner></div>

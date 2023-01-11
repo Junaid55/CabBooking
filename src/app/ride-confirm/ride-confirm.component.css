@@ -1,0 +1,40 @@
+.example-card {
+    
+  min-height : 200px ;
+
+  
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  color: #fff;
+  
+  
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.material-symbols-outlined
+{
+  color: green;
+}
+.payment
+{
+  color: darkgoldenrod;
+}
+.bg
+{
+border: 1px solid rgba(244, 244, 244, 0);
+
+  /* background-image: radial-gradient(#048def,#0369ca,#0449a9); */
+  /* background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%); */
+  /* background: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+  background-color:rgb(229, 233, 233);
+  height: 400px;
+  
+
+} 
+
+
+

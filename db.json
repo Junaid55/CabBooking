@@ -6,6 +6,96 @@
       "author": "typicode"
     }
   ],
+  "rideDB": [
+    {
+      "pickup": "Indore, Madhya Pradesh, India",
+      "drop": "Shahdol, Madhya Pradesh, India",
+      "driver_id": 3,
+      "user_id": 1,
+      "amount": 119,
+      "id": 1
+    },
+    {
+      "pickup": "Ujjain, Madhya Pradesh, India",
+      "drop": "Indore, Madhya Pradesh, India",
+      "driver_id": 2,
+      "user_id": 1,
+      "amount": 350,
+      "id": 2
+    },
+    {
+      "pickup": "Indore, Madhya Pradesh, India",
+      "drop": "Ujjain, Madhya Pradesh, India",
+      "driver_id": 3,
+      "user_id": 1,
+      "amount": 285,
+      "id": 3
+    },
+    {
+      "pickup": "Ujjain - Indore Rd, Rajwada, Indore, Madhya Pradesh, India",
+      "drop": "Sanwer, Madhya Pradesh 453551, India",
+      "driver_id": 4,
+      "user_id": 1,
+      "amount": 230,
+      "id": 4
+    },
+    {
+      "pickup": "Ujjain, Madhya Pradesh, India",
+      "drop": "Indore, Madhya Pradesh, India",
+      "driver_id": 5,
+      "user_id": 1,
+      "amount": 228,
+      "id": 5
+    },
+    {
+      "pickup": "Ujjain",
+      "drop": "Dewas, Madhya Pradesh, India",
+      "driver_id": 5,
+      "user_id": 1,
+      "amount": 270,
+      "id": 6
+    },
+    {
+      "pickup": "Shahdol, Madhya Pradesh, India",
+      "drop": "Indore, Madhya Pradesh, India",
+      "driver_id": 5,
+      "user_id": 1,
+      "amount": 258,
+      "id": 7
+    },
+    {
+      "pickup": "Indore, Madhya Pradesh, India",
+      "drop": "Ujjain, Madhya Pradesh, India",
+      "driver_id": 5,
+      "user_id": 1,
+      "amount": 112,
+      "id": 8
+    },
+    {
+      "pickup": "Ujjain, Madhya Pradesh, India",
+      "drop": "Indore",
+      "driver_id": 2,
+      "user_id": 1,
+      "amount": 281,
+      "id": 9
+    },
+    {
+      "pickup": "Kolkata, West Bengal, India",
+      "drop": "Tamil Nadu, India",
+      "driver_id": 4,
+      "user_id": 1,
+      "amount": 130,
+      "id": 10
+    },
+    {
+      "pickup": "New Palasia, Indore, Madhya Pradesh 452001, India",
+      "drop": "Shyama Prasad Mukherjee Marg, Mori Gate, New Delhi, Delhi 110006, India",
+      "driver_id": 1,
+      "user_id": 1,
+      "amount": 150,
+      "id": 11
+    }
+  ],
   "comments": [
     {
       "id": 1,
@@ -18,7 +108,7 @@
       "id": 1,
       "name": "Aman Demo",
       "email": "aman@gmail.com",
-      "cartype": "car",
+      "carname": "car",
       "carno": "mpp",
       "rate": "45",
       "password": "aman@1234",
@@ -52,7 +142,7 @@
     },
     {
       "id": 4,
-      "name": "Umesh Dangi",
+      "name": "Umesh Ji",
       "email": "umeshdangi@gmail.com",
       "carname": "Alto",
       "carno": "MP 09 UU 8888",
@@ -64,18 +154,48 @@
     },
     {
       "id": 5,
-      "name": "Umesh Dangi",
-      "email": "umeshdangi@gmail.com",
+      "name": "Ramesh Bhai",
+      "email": "rameshbhai@gmail.com",
       "carname": "Alto",
-      "carno": "MP 09 UU 8888",
-      "rate": 10,
-      "password": "umesh@1234",
+      "carno": "MP 09 UU 9999",
+      "rate": 15,
+      "password": "ramesh@1234",
       "gender": "M",
       "dob": "1999-11-04T18:30:00.000Z",
       "mob": "1234567891"
+    },
+    {
+      "id": 6,
+      "name": "Anku Lashkari",
+      "email": "anku@gmail.com",
+      "carname": "Swift",
+      "carno": "MP 09 SS 1111",
+      "rate": 10,
+      "password": "anku@1234",
+      "gender": "M",
+      "dob": "2001-01-08T18:30:00.000Z",
+      "mob": "1234567891"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "profile": [
+    {
+      "name": "typicode"
+    }
+  ],
+  "Customer": [
+    {
+      "id": 1,
+      "name": "Divya Vyas",
+      "email": "dfsfdkjg@dsdjk.com",
+      "password": "qwertyuiop",
+      "mob": "9876543210"
+    },
+    {
+      "id": 2,
+      "name": "Divya Vyas",
+      "email": "dskjf@d.com",
+      "password": "qwertyuiop",
+      "mob": "7890654321"
+    }
+  ]
 }
