@@ -1,0 +1,37 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.demo{
+  background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.guidingtech.com%2Fwp-content%2Fuploads%2FSearch-Destination-in-Google-Maps.jpg&imgrefurl=https%3A%2F%2Fwww.guidingtech.com%2Fhow-to-save-and-find-your-parking-location-in-google-maps%2F&tbnid=520G3Neo4bPWqM&vet=10CG0QMyiZAWoXChMIqLao56-8_AIVAAAAAB0AAAAAEAI..i&docid=APcSOYCD3fJOvM&w=782&h=1602&q=Google%20map%20location&ved=0CG0QMyiZAWoXChMIqLao56-8_AIVAAAAAB0AAAAAEAI");
+  height: 250px;
+  width: 50%;
+  background-size: cover;
+    }
+ 
+      
+
+      
