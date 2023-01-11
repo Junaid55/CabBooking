@@ -7,9 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { VerifyEmailAddressComponent } from './verify-email-address/verify-email-address.component';
 import { AuthGuard } from './shared/guard/auth.guard';
 import { DriverpanelComponent } from './driverpanel/driverpanel.component';
+import { ContactusComponent } from './index/contactus/contactus.component';
+import { IndexComponent } from './index/index/index.component';
 
 const routes: Routes = [
-  {path:"", component:LoginComponent},
+  { path: '', component: IndexComponent },
+  { path: 'contactus', component: ContactusComponent },
+  { path: 'home', component: IndexComponent },
+  {path:"login", component:LoginComponent},
   {path:"verify-email-address", component:VerifyEmailAddressComponent},
   {path:"driver-register", component:DriverComponent},
   {path:"customer-register", component:CustomerComponent},

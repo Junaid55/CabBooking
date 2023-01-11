@@ -1,0 +1,158 @@
+.home_img img {
+    width: 60%;
+    transform: rotate(-130deg);
+    position: relative;
+    top: -10%;
+    left: 15%;
+}
+.home_img .home_img_hid {
+    background-color: #F9C935;
+    content: '';
+    width: 1744px;
+    height: 683px;
+    z-index: -1;
+    position: relative;
+    border-radius: 507.5px;
+    transform: rotate(130deg) translateX(-15%) translateY(66%);
+    top: 0%;
+    right: 0%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.images
+{
+  height: 100px;
+  width: 100px;
+}
+.home_text_wrapper{
+    margin-block:5%;
+    margin-inline:2%;
+}
+.home_text_wrapper h1 {
+    font-weight: 300;
+    line-height: 60px;
+    font-size: 50px;
+    margin: 0;
+}
+.home_text_wrapper p {
+    color: #4B4B4B;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    width: 73%;
+    margin: 20px 0 0 0;
+}
+
+.demo
+{
+      background-image: url('C:\Users\ritika.maheshwari\Desktop\cabbooking\user\src\assets\nbg.png'); 
+    
+    /* background-size: cover; */
+      }
+
+      .example-card {
+        max-width: 300px;
+        margin-left: 10px;
+        }
+      
+      .example-header-image {
+        background-image: url('C:/Users/ritika.maheshwari/Desktop/cabbooking/user/src/assets/download.jpg');
+        background-size: cover;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-left: 10px;
+      }
+  .new
+  {
+    padding-top: 60px;
+  }
+  .card-image{
+    border-radius: 50%;
+  }
+  .example-header-image1 {
+
+
+
+    background-image: url('https://images.picxy.com/cache/2020/5/11/164f99688e9d2bf245e01e9347824e1c.jpg');
+
+
+
+    background-size:cover;
+
+    width: 200px;
+
+    height: 200px;
+
+}
+.example-header-image2 {
+
+
+
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSah4KTCcn1ppcFTPwcuuE-mI1mYGXMUsSt4Q&usqp=CAU');
+
+
+
+  background-size:cover;
+
+  width: 200px;
+
+  height: 200px;
+
+}
+.example-header-image3 {
+
+
+
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSn01Ua7LlHhG5-nX1dzIqt7o829WWnyEEqg&usqp=CAU');
+
+
+
+  background-size:cover;
+
+  width: 200px;
+
+  height: 200px;
+
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.demo{
+  background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.guidingtech.com%2Fwp-content%2Fuploads%2FSearch-Destination-in-Google-Maps.jpg&imgrefurl=https%3A%2F%2Fwww.guidingtech.com%2Fhow-to-save-and-find-your-parking-location-in-google-maps%2F&tbnid=520G3Neo4bPWqM&vet=10CG0QMyiZAWoXChMIqLao56-8_AIVAAAAAB0AAAAAEAI..i&docid=APcSOYCD3fJOvM&w=782&h=1602&q=Google%20map%20location&ved=0CG0QMyiZAWoXChMIqLao56-8_AIVAAAAAB0AAAAAEAI");
+  height: 250px;
+  width: 50%;
+  background-size: cover;
+    }
+ 
+      
+
+      
