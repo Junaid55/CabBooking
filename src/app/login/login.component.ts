@@ -34,7 +34,9 @@ export class LoginComponent {
       this.custSer.getCustomer(em).subscribe((res) => {
         console.log('customer', res);
         if (res && res.length) {
-          this.custSer.setCustomerData(res.id);
+          console.log(res[0].id)
+
+          this.custSer.setCustomerData(res[0].id);
 
           this.authService.SignInCustomer(this.empForm.value);
         }
@@ -43,11 +45,11 @@ export class LoginComponent {
       this.drivSer.getDriver(em).subscribe((res) => {
         console.log('driver', res);
         if (res && res.length) {
-          this.drivSer.setDriverData(res.id);
-
+          this.drivSer.setDriverData(res[0].id);
+          console.warn('Driver'+res[0].id);
           this.authService.SignInDriver(this.empForm.value);
         }
-      });
+      })
     }
   }
 }

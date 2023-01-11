@@ -20,7 +20,7 @@ export class HomeComponent    {
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
 
-    this.cser.setCustomerData(this.id)
+    
 
     this.dialog.open(DialogBookingFormComponent, {
       width: '1000px',

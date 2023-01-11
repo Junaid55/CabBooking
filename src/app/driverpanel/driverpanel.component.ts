@@ -39,6 +39,7 @@ export class DriverpanelComponent implements OnInit{
   total_amount:number=0;
   total_ride:number=0;
   driver!:Driver;
+  did:number=JSON.parse(localStorage.getItem('did')!)
 
   ELEMENT_DATA: Array<PeriodicElement>=[];
   displayedColumns: string[] = ['user_id', 'pickup', 'drop','amount'];
@@ -48,7 +49,7 @@ export class DriverpanelComponent implements OnInit{
   paginator!: MatPaginator;
 
   ngOnInit(){
-      this.cs.GetDriverById(1).subscribe({
+      this.cs.GetDriverById(this.did).subscribe({
         next:(res)=>{
           console.log(res);
           this.driver=res;
@@ -69,7 +70,7 @@ export class DriverpanelComponent implements OnInit{
             //console.log(this.rides)
             console.log("this iiissss")
             res.forEach((element:any) => {
-              if(element.driver_id==1)
+              if(element.driver_id==this.did)
               {
                 this.rides.push(element)
                 this.total_ride++;
