@@ -2,6 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogBookingFormComponent } from '../dialog-booking-form/dialog-booking-form.component';
 import { RideConfirmComponent } from '../ride-confirm/ride-confirm.component';
+import { AuthService } from '../shared/services/auth.service';
 import { CustomerService } from '../shared/services/customer.service';
 import { RideServiceService } from '../shared/services/ride-service.service';
 
@@ -12,7 +13,7 @@ import { RideServiceService } from '../shared/services/ride-service.service';
 })
 export class HomeComponent    {
   id=JSON.parse(localStorage.getItem('user')!);
-  constructor(private dialog:MatDialog,private cser:CustomerService){}
+  constructor(private dialog:MatDialog,private cser:CustomerService, public authService:AuthService){}
  
   
 

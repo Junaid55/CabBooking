@@ -1,201 +1,110 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
   "rideDB": [
     {
       "pickup": "Indore, Madhya Pradesh, India",
-      "drop": "Shahdol, Madhya Pradesh, India",
+      "drop": "Kartavya Path, India Gate, New Delhi, Delhi 110001, India",
       "driver_id": 3,
-      "user_id": 1,
-      "amount": 119,
+      "user_id": {
+        "uid": "zfxflcxvCHMXHn5Hh9x3uejRsa93",
+        "email": "junaidqureshi165@gmail.com",
+        "emailVerified": true,
+        "isAnonymous": false,
+        "providerData": [
+          {
+            "providerId": "password",
+            "uid": "junaidqureshi165@gmail.com",
+            "displayName": null,
+            "email": "junaidqureshi165@gmail.com",
+            "phoneNumber": null,
+            "photoURL": null
+          }
+        ],
+        "stsTokenManager": {
+          "refreshToken": "AOkPPWQH-_UfVCN6UVM8-i72R8mExzTl2Qak8UDvDzHmfDF0mrzHJxFT8DJEn5EdaqSGV6TKCEogYXEjPKADT1YhoGPu01UnFUZxE819gYxRy9eipbpAn6xkEqdqmlWPBNcNE8IPImcZWygwG0RDWV4kxd5IWxYVOpsUbC1kmIMvyws9cdoAu6-PcL_BOSXsxnBUdpkmwE5Y9dZTMHqJwyMdtRhdHx1UPnCAFXRlY3taAbij7DJrwZ4",
+          "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImNlOWI4ODBmODE4MmRkYTU1N2Y3YzcwZTIwZTRlMzcwZTNkMTI3NDciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY2FiYm9va2luZy1kZDI3MSIsImF1ZCI6ImNhYmJvb2tpbmctZGQyNzEiLCJhdXRoX3RpbWUiOjE2NzM0MzEzNTcsInVzZXJfaWQiOiJ6ZnhmbGN4dkNITVhIbjVIaDl4M3VlalJzYTkzIiwic3ViIjoiemZ4ZmxjeHZDSE1YSG41SGg5eDN1ZWpSc2E5MyIsImlhdCI6MTY3MzQzMTM1NywiZXhwIjoxNjczNDM0OTU3LCJlbWFpbCI6Imp1bmFpZHF1cmVzaGkxNjVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsianVuYWlkcXVyZXNoaTE2NUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.cPNNjYYMKpahoIkU5pbyzSLHe6l-lvXkQr6yOMXU6-SymhHb8Pv6i5b94QtsRqmCw1OgiXfdj97oj3GQraG58axQBDrW8UerFL6zhvRSyXBvGvLVyNA3uQc3tFokwav_sJJdS22rYbwodiaaCPv0cA07wZ6xUeC0JoueVHD6Yd-poQcxu5hXsU7UNrMzAYUIzVjx2jONY31Ean5Ozeb98QC3lSsP0cHGh9LCN48uqoYNs4ZWDgYeBEHEQxDSiFUfC4sbIO4Y1roTW-uHVw4xqwECbvFFIY6ByS2HW_CZ9lUH_Gms8ICimuE4N81SRcjKsBPbgxBXxoCZ3M0ggw0fOw",
+          "expirationTime": 1673434958114
+        },
+        "createdAt": "1673431215916",
+        "lastLoginAt": "1673431357960",
+        "apiKey": "AIzaSyCr3g2JinRvQKKOfyYzcTbIQltPAqxbeMw",
+        "appName": "[DEFAULT]"
+      },
+      "amount": 159,
       "id": 1
     },
     {
-      "pickup": "Ujjain, Madhya Pradesh, India",
-      "drop": "Indore, Madhya Pradesh, India",
-      "driver_id": 2,
-      "user_id": 1,
-      "amount": 350,
+      "pickup": "Indore, Madhya Pradesh, India",
+      "drop": "Ujjain, Madhya Pradesh, India",
+      "driver_id": 4,
+      "user_id": {
+        "uid": "nXLDk0isjkcxOgFiAkahLh6qdwI3",
+        "email": "divyavyas1205@gmail.com",
+        "emailVerified": true,
+        "isAnonymous": false,
+        "providerData": [
+          {
+            "providerId": "password",
+            "uid": "divyavyas1205@gmail.com",
+            "displayName": null,
+            "email": "divyavyas1205@gmail.com",
+            "phoneNumber": null,
+            "photoURL": null
+          }
+        ],
+        "stsTokenManager": {
+          "refreshToken": "AOkPPWRLWq4eA1BOn2qtPhpNPLoKjtmGb1aSI5H6oJDfMcd2AAXLgoMzVLAMIIGct1bY3JsVB8U7nXcA_x07iBtd9ZRyG7kNw-McJWR-6-KapPcRl0Yv_i-tVQ2qtcuGm0wqRrZj_-H5eqpAwZ3N3uoG6VoRywgOEAdxIDPvXdnfReqmZ_2NLC6gCCMdBBcUn2nSJD5-WRDS8YWVFHJnd0zfzBFwzADfow",
+          "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImNlOWI4ODBmODE4MmRkYTU1N2Y3YzcwZTIwZTRlMzcwZTNkMTI3NDciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY2FiYm9va2luZy1kZDI3MSIsImF1ZCI6ImNhYmJvb2tpbmctZGQyNzEiLCJhdXRoX3RpbWUiOjE2NzM0MzE3NTMsInVzZXJfaWQiOiJuWExEazBpc2prY3hPZ0ZpQWthaExoNnFkd0kzIiwic3ViIjoiblhMRGswaXNqa2N4T2dGaUFrYWhMaDZxZHdJMyIsImlhdCI6MTY3MzQzMTc1MywiZXhwIjoxNjczNDM1MzUzLCJlbWFpbCI6ImRpdnlhdnlhczEyMDVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZGl2eWF2eWFzMTIwNUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.UFxrs4POM9P9STKPDFxwlkatODi7v5JTH1SNfRHTd1bbCKrHvMCAyadf052wpTrkvKUWw-NdCrjJN-plroNebSzGngWgLEiuq7rG0wkz4uhyp0oI6_ppbACeVLaV2T_qCNV60tzxxdmy6-iJzQIL7jusTcu1WYPLq_PRQofGuDq8OXt78GwMHsZVtAZJLQguPTcs6GmaIOtCWExxD8LEI3V9T_ERCcTAkmmhhqf93GSRnDNXoPNyW_DEh0xh2cj4bQT20jPFxskePZJ9J9o0eAZAIrWIhbs3_IrGVfmf3jSsGYNbFjjHTqKYCWrJzGZLbUt0MRGCJ1KIot60BEigaw",
+          "expirationTime": 1673435353984
+        },
+        "createdAt": "1673429824772",
+        "lastLoginAt": "1673431753787",
+        "apiKey": "AIzaSyCr3g2JinRvQKKOfyYzcTbIQltPAqxbeMw",
+        "appName": "[DEFAULT]"
+      },
+      "amount": 241,
       "id": 2
-    },
-    {
-      "pickup": "Indore, Madhya Pradesh, India",
-      "drop": "Ujjain, Madhya Pradesh, India",
-      "driver_id": 3,
-      "user_id": 1,
-      "amount": 285,
-      "id": 3
-    },
-    {
-      "pickup": "Ujjain - Indore Rd, Rajwada, Indore, Madhya Pradesh, India",
-      "drop": "Sanwer, Madhya Pradesh 453551, India",
-      "driver_id": 4,
-      "user_id": 1,
-      "amount": 230,
-      "id": 4
-    },
-    {
-      "pickup": "Ujjain, Madhya Pradesh, India",
-      "drop": "Indore, Madhya Pradesh, India",
-      "driver_id": 5,
-      "user_id": 1,
-      "amount": 228,
-      "id": 5
-    },
-    {
-      "pickup": "Ujjain",
-      "drop": "Dewas, Madhya Pradesh, India",
-      "driver_id": 5,
-      "user_id": 1,
-      "amount": 270,
-      "id": 6
-    },
-    {
-      "pickup": "Shahdol, Madhya Pradesh, India",
-      "drop": "Indore, Madhya Pradesh, India",
-      "driver_id": 5,
-      "user_id": 1,
-      "amount": 258,
-      "id": 7
-    },
-    {
-      "pickup": "Indore, Madhya Pradesh, India",
-      "drop": "Ujjain, Madhya Pradesh, India",
-      "driver_id": 5,
-      "user_id": 1,
-      "amount": 112,
-      "id": 8
-    },
-    {
-      "pickup": "Ujjain, Madhya Pradesh, India",
-      "drop": "Indore",
-      "driver_id": 2,
-      "user_id": 1,
-      "amount": 281,
-      "id": 9
-    },
-    {
-      "pickup": "Kolkata, West Bengal, India",
-      "drop": "Tamil Nadu, India",
-      "driver_id": 4,
-      "user_id": 1,
-      "amount": 130,
-      "id": 10
-    },
-    {
-      "pickup": "New Palasia, Indore, Madhya Pradesh 452001, India",
-      "drop": "Shyama Prasad Mukherjee Marg, Mori Gate, New Delhi, Delhi 110006, India",
-      "driver_id": 1,
-      "user_id": 1,
-      "amount": 150,
-      "id": 11
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
     }
   ],
   "Driverpost": [
     {
       "id": 1,
-      "name": "Aman Demo",
-      "email": "aman@gmail.com",
-      "carname": "car",
-      "carno": "mpp",
-      "rate": "45",
-      "password": "aman@1234",
+      "name": "Ankit Lashkari",
+      "email": "ankit.lashkari911@gmail.com",
+      "carname": "Swift",
+      "carno": "MP 09 WD 5678",
+      "rate": 13,
+      "password": "qwertyuiop",
       "gender": "M",
-      "dob": "2023-01-19T18:30:00.000Z",
-      "mob": "1234567891"
+      "dob": "1999-06-09T18:30:00.000Z",
+      "mob": "9876432108"
     },
     {
       "id": 2,
-      "name": "Ankit Lashkari",
-      "email": "ankit.lashkari911@gmail.com",
-      "carname": "car",
-      "carno": "MP 09 AA 1111",
-      "rate": 10,
-      "password": "ankit@1234",
-      "gender": "M",
-      "dob": "2001-01-08T18:30:00.000Z",
-      "mob": "9111221505"
-    },
-    {
-      "id": 3,
-      "name": "Swagat Mehta",
-      "email": "swagat@gmail.com",
-      "carname": "Swift",
-      "carno": "MP 09 SS 9999",
-      "rate": 9,
-      "password": "swagat@1234",
-      "gender": "M",
-      "dob": "2000-04-06T18:30:00.000Z",
-      "mob": "1234567890"
-    },
-    {
-      "id": 4,
-      "name": "Umesh Ji",
-      "email": "umeshdangi@gmail.com",
+      "name": "New Junaid",
+      "email": "imqjunaid@gmail.com",
       "carname": "Alto",
-      "carno": "MP 09 UU 8888",
+      "carno": "Mp13Mi3178",
       "rate": 10,
-      "password": "umesh@1234",
+      "password": "qwertyuiop",
       "gender": "M",
-      "dob": "1999-11-04T18:30:00.000Z",
-      "mob": "1234567891"
-    },
-    {
-      "id": 5,
-      "name": "Ramesh Bhai",
-      "email": "rameshbhai@gmail.com",
-      "carname": "Alto",
-      "carno": "MP 09 UU 9999",
-      "rate": 15,
-      "password": "ramesh@1234",
-      "gender": "M",
-      "dob": "1999-11-04T18:30:00.000Z",
-      "mob": "1234567891"
-    },
-    {
-      "id": 6,
-      "name": "Anku Lashkari",
-      "email": "anku@gmail.com",
-      "carname": "Swift",
-      "carno": "MP 09 SS 1111",
-      "rate": 10,
-      "password": "anku@1234",
-      "gender": "M",
-      "dob": "2001-01-08T18:30:00.000Z",
-      "mob": "1234567891"
-    }
-  ],
-  "profile": [
-    {
-      "name": "typicode"
+      "dob": "1992-12-11T18:30:00.000Z",
+      "mob": "9876543201"
     }
   ],
   "Customer": [
     {
       "id": 1,
       "name": "Divya Vyas",
-      "email": "dfsfdkjg@dsdjk.com",
+      "email": "divyavyas1205@gmail.com",
       "password": "qwertyuiop",
       "mob": "9876543210"
     },
     {
       "id": 2,
-      "name": "Divya Vyas",
-      "email": "dskjf@d.com",
+      "name": "Junaid Qureshi",
+      "email": "junaidqureshi165@gmail.com",
       "password": "qwertyuiop",
-      "mob": "7890654321"
+      "mob": "9876543210"
     }
   ]
 }
