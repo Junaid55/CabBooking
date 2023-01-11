@@ -46,6 +46,54 @@
       "user_id": 1,
       "amount": 228,
       "id": 5
+    },
+    {
+      "pickup": "Ujjain",
+      "drop": "Dewas, Madhya Pradesh, India",
+      "driver_id": 5,
+      "user_id": 1,
+      "amount": 270,
+      "id": 6
+    },
+    {
+      "pickup": "Shahdol, Madhya Pradesh, India",
+      "drop": "Indore, Madhya Pradesh, India",
+      "driver_id": 5,
+      "user_id": 1,
+      "amount": 258,
+      "id": 7
+    },
+    {
+      "pickup": "Indore, Madhya Pradesh, India",
+      "drop": "Ujjain, Madhya Pradesh, India",
+      "driver_id": 5,
+      "user_id": 1,
+      "amount": 112,
+      "id": 8
+    },
+    {
+      "pickup": "Ujjain, Madhya Pradesh, India",
+      "drop": "Indore",
+      "driver_id": 2,
+      "user_id": 1,
+      "amount": 281,
+      "id": 9
+    },
+    {
+      "pickup": "Kolkata, West Bengal, India",
+      "drop": "Tamil Nadu, India",
+      "driver_id": 4,
+      "user_id": 1,
+      "amount": 130,
+      "id": 10
+    },
+    {
+      "pickup": "New Palasia, Indore, Madhya Pradesh 452001, India",
+      "drop": "Shyama Prasad Mukherjee Marg, Mori Gate, New Delhi, Delhi 110006, India",
+      "driver_id": 1,
+      "user_id": 1,
+      "amount": 150,
+      "id": 11
     }
   ],
   "comments": [
@@ -117,10 +165,11 @@
       "mob": "1234567891"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
-}{
+  "profile": [
+    {
+      "name": "typicode"
+    }
+  ],
   "Customer": [
     {
       "id": 1,

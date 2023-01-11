@@ -9,8 +9,10 @@ import { CustomerService } from '../shared/services/customer.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private fb:FormBuilder, private authService:AuthService){}
+  constructor(private fb:FormBuilder, private authService:AuthService,private custSer:CustomerService){}
 
+
+  custArr=[];
   hide = true;
   empForm!:FormGroup;
   emailpattern!:"^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";
@@ -23,9 +25,37 @@ export class LoginComponent {
   }
   
   OnSubmit(){
+
     
+    let em=this.empForm.value['email']
     if(this.empForm.valid){
+
+      this.custSer.getCustomer().subscribe(
+        {
+          next:(res)=>
+          {
+            console.log(res)
+            this.custArr=res
+            console.log(this.custArr)
+
+            this.custArr.forEach((item:any)=>
+              {
+                if(item.email==this.empForm.value['email'])
+                {
+                  console.log(item)
+                  this.custSer.setCustomerData(item.id)
+
+                 
+                }
+              })
+            
+            
+          }
+        }
+      )
+
       this.authService.SignIn(this.empForm.value);
+
     }
   }
 }

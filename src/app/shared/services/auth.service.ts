@@ -40,10 +40,14 @@ export class AuthService {
     return this.afAuth
       .signInWithEmailAndPassword(user.email, user.password)
       .then((result) => {
+
+        
+        
         this.SetUserData(result.user);
         this.afAuth.authState.subscribe((user) => {
           console.warn(user);
           if (user) {
+            
             this.router.navigate(['book-ride']);
           }
         });

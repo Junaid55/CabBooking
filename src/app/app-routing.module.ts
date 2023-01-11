@@ -12,7 +12,7 @@ const routes: Routes = [
   {path:"verify-email-address", component:VerifyEmailAddressComponent},
   {path:"driver-register", component:DriverComponent},
   {path:"customer-register", component:CustomerComponent},
-  {path:"book-ride", component:HomeComponent, canActivate:[AuthGuard]}
+  {path:"book-ride", component:HomeComponent }//canActivate:[AuthGuard]
 ];
 
 @NgModule({

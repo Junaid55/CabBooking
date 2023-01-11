@@ -1,108 +1,115 @@
-<div class="container-fluid mt-5" >
-<div class="row" >
-    <div class="col-sm-3">
-        <!-- driver details -->
-    <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Driver</mat-card-title>
-          <mat-card-subtitle>{{driverDetails.name}}</mat-card-subtitle>
-        </mat-card-header>
-
-        <mat-divider style="margin-bottom: 15px;"></mat-divider>
-
-        <mat-card-content>
-          <p>
-            <b>Car Number</b> : {{driverDetails.carno}}
-
-
-          </p>
-          <p>
-            <b>Ratings</b> : 4.5
-          </p>
-          <p>
-            <b>Car Name</b> : {{driverDetails.carname}}
-          </p>
-        </mat-card-content>
-
-      </mat-card>
-    </div>
-
-    <!-- pickup-details -->
-    <div class="col-sm-3">
-        <mat-card class="example-card">
-            <mat-card-header>
-              <div mat-card-avatar>
-                <mat-icon color="warn">location_on</mat-icon>
-
-              </div>
-              <mat-card-title>Pickup</mat-card-title>
-            </mat-card-header>
-
-            <mat-divider style="margin-bottom: 15px;"></mat-divider>
-
-            <mat-card-content>
-              <p>
-                <b>Pickup Location</b> : {{ride.pickup}}
-
-
-              </p>
-
-            </mat-card-content>
-
-          </mat-card>
-        </div>
-
-        <!-- drop details -->
-        <div class="col-sm-3">
-            <mat-card class="example-card">
-                <mat-card-header>
-                  <div mat-card-avatar>
-                    <mat-icon class="material-symbols-outlined">location_on</mat-icon>
-                  </div>
-                  <mat-card-title>Drop</mat-card-title>
-
-                </mat-card-header>
-
-                <mat-divider style="margin-bottom: 15px;"></mat-divider>
-
-                <mat-card-content>
-                  <p>
-                    <b>Drop Location</b> : {{ride.drop}}
-
-
-                  </p>
-
-                </mat-card-content>
-
-              </mat-card>
-            </div>
-
-
-            <!-- payment -->
-   <div class="col-sm-3">
-    <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar ><mat-icon class="payment">currency_rupee</mat-icon></div>
-          <mat-card-title>Payment</mat-card-title>
+<div class="bg">
+  <div class="container-fluid mt-5 " >
+  <div class="row" >
+      <div class="col-sm-3">
+          <!-- driver details -->
+      <mat-card class="example-card" style="background:linear-gradient(45deg, #63d4bd, #8ce8d6);">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Driver</mat-card-title>
+            <mat-card-subtitle>{{driverDetails.name}}</mat-card-subtitle>
+          </mat-card-header>
+  
+          <mat-divider ></mat-divider>
+  
+          <mat-card-content>
+            <p>
+              <b>Car Number</b> : {{driverDetails.carno}}
+  
+  
+            </p>
+            <p>
+              <b>Ratings</b> : 4.5
+            </p>
+            <p>
+              <b>Car Name</b> : {{driverDetails.carname}}
+            </p>
+          </mat-card-content>
+  
+        </mat-card>
+      </div>
+  
+      <!-- pickup-details -->
+      <div class="col-sm-3">
+          <mat-card class="example-card"
+           style="background:linear-gradient(45deg, #eacea7, #ebc590);"
           
-        </mat-card-header>
-
-        <mat-divider style="margin-bottom: 15px;"></mat-divider>
-
-        <mat-card-content>
-          <p>
-            <b>Ride Fare</b> : &#8377; {{ride.amount}}
-
-
-          </p>
-         
-        </mat-card-content>
-
-      </mat-card>
-    </div>
-
-      <div class="mt-5"><button mat-raised-button color="primary" (click)="startRide('2000','200')">Start Ride</button></div>
-     
-</div>
-</div>
+          >
+              <mat-card-header>
+                <div mat-card-avatar>
+                  <mat-icon color="warn">location_on</mat-icon>
+  
+                </div>
+                <mat-card-title>Pickup</mat-card-title>
+              </mat-card-header>
+  
+              <mat-divider style="margin-bottom: 15px;"></mat-divider>
+  
+              <mat-card-content>
+                <p>
+                  <b>Pickup Location</b> : {{ride.pickup}}
+  
+  
+                </p>
+  
+              </mat-card-content>
+  
+            </mat-card>
+          </div>
+  
+          <!-- drop details -->
+          <div class="col-sm-3">
+              <mat-card class="example-card"
+              style="background-image: radial-gradient(#69a4cf,#82aed8,#8aacdb);">
+                  <mat-card-header>
+                    <div mat-card-avatar>
+                      <mat-icon class="material-symbols-outlined">location_on</mat-icon>
+                    </div>
+                    <mat-card-title>Drop</mat-card-title>
+  
+                  </mat-card-header>
+  
+                  <mat-divider style="margin-bottom: 15px;"></mat-divider>
+  
+                  <mat-card-content>
+                    <p>
+                      <b>Drop Location</b> : {{ride.drop}}
+  
+  
+                    </p>
+  
+                  </mat-card-content>
+  
+                </mat-card>
+              </div>
+  
+  
+              <!-- payment -->
+     <div class="col-sm-3">
+      <mat-card class="example-card"
+      style="background: linear-gradient( 45deg, #ff5370, #ff869a);;">
+          <mat-card-header>
+            <div mat-card-avatar ><mat-icon class="payment">currency_rupee</mat-icon></div>
+            <mat-card-title>Payment</mat-card-title>
+            
+          </mat-card-header>
+  
+          <mat-divider style="margin-bottom: 15px;"></mat-divider>
+  
+          <mat-card-content>
+            <p>
+              <b>Ride Fare</b> : &#8377; {{ride.amount}}
+  
+  
+            </p>
+           
+          </mat-card-content>
+  
+        </mat-card>
+      </div>
+  
+        <div class="mt-5"><button mat-raised-button class="btn" (click)="startRide('2000','200')" color="primary">Start Ride</button></div>
+       
+  </div>
+  </div>
+  </div>

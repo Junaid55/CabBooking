@@ -1,7 +1,8 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild,OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { RideConfirmComponent } from '../ride-confirm/ride-confirm.component';
 import { RideDetails } from '../shared/models';
+import { CustomerService } from '../shared/services/customer.service';
 import { RideServiceService } from '../shared/services/ride-service.service';
 
 @Component({
@@ -33,7 +34,7 @@ export class DialogBookingFormComponent implements AfterViewInit{
     pickup:undefined,
     drop:undefined,
     driver_id:undefined,
-    user_id:1,
+    user_id:JSON.parse(localStorage.getItem('uid')!),
     amount:undefined
     
   }
@@ -57,9 +58,10 @@ randomAmount() {
 
   
 
-  constructor(private dialog : MatDialog,private ser:RideServiceService){
+  constructor(private dialog : MatDialog,private Cser:CustomerService,private ser:RideServiceService){
     this.showLoader=false;
   }
+  
   ngAfterViewInit(): void {
     //places autocomplete api
     this.autocomplete1=new google.maps.places.Autocomplete(this.inputField1.nativeElement)

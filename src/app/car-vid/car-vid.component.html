@@ -1,7 +1,9 @@
 
- <div class="mt-4 mx-5 vid">
-    <video autoplay (ended)="onEnd()">
-       <source src="assets/new.mp4" type="video/mp4">
+ <div class="vid">
+   <div>
+    <video class = "vidLen" autoplay (ended)="onEnd()">
+       <source src="assets/nn.mp4" type="video/mp4">
  </video>
  </div>
- <button mat-raised-button color="primary" *ngIf="showPayButton" class="mt-3 mx-5">Proceed For Payment</button>
+ <div    clas="btnride" style="position: absolute;top: 40%;left: 35%;" *ngIf="showPayButton"><button mat-raised-button color="primary">Proceed For Payment</button> </div>
+</div>

@@ -1,7 +1,11 @@
-<router-outlet>
-    <mat-toolbar style="background-color:rgb(235, 206, 44);"> 
-    <span><strong>Cab Booking</strong></span>
-    </mat-toolbar>
+<mat-toolbar color="primary">
+  <span>Cab Booking</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+
+</mat-toolbar>
     
     <div class="center" >
       <button class="btn" mat-raised-button (click)="openDialog('1000ms', '200ms')">Book A Cab</button>

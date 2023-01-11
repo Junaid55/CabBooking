@@ -93,8 +93,8 @@ export class RideConfirmComponent implements OnInit{
     this.dialog.closeAll()  
     this.dialog.open(CarVidComponent,
       {
-        height:'400px',
-        width:'900px',
+        height:'420px',
+        width:'920px',
         enterAnimationDuration,
         exitAnimationDuration
       

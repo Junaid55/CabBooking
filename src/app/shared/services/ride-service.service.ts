@@ -11,6 +11,8 @@ export class RideServiceService {
 
   setId(id:any)
   {
+    console.log('setId')
+    console.log(id)
     this.id.next(id)
   }
 

@@ -4,7 +4,7 @@
     text-align: center;
     height: 512px;
     /* background-image: url("assets/nbg.png");  */
- background-image: url("../../assets/nbg.png");  
+ background-image: url("C:/Users/junaid.qureshi/Desktop/Websites/Capestone/thirdtry/CabBooking/src/assets/nbg.png");  
      background-size: cover;
     
 
@@ -19,5 +19,8 @@
    height: 50px;
    background-color: rgb(235, 206, 44);
 
+  }
+  .example-spacer {
+    flex: 1 1 auto;
   }
   
