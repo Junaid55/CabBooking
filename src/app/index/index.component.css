@@ -47,7 +47,7 @@
 
 .demo
 {
-      background-image: url('C:\Users\ritika.maheshwari\Desktop\cabbooking\user\src\assets\nbg.png'); 
+      background-image: url('../../../assets/nbg.png'); 
     
     /* background-size: cover; */
       }
@@ -58,7 +58,7 @@
         }
       
       .example-header-image {
-        background-image: url('C:/Users/ritika.maheshwari/Desktop/cabbooking/user/src/assets/download.jpg');
+        background-image: url('../../../assets/download.jpg');
         background-size: cover;
       }
       .container {
@@ -133,12 +133,6 @@
 }
 
 /* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 400px; /* Should be removed. Only for demonstration */
-}
 
 /* Clear floats after the columns */
 .row:after {

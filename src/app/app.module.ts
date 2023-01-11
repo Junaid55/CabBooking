@@ -25,6 +25,8 @@ import { environment } from '../environments/environment';
 import { VerifyEmailAddressComponent } from './verify-email-address/verify-email-address.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { LoginComponent } from './login/login.component';
+import { IndexComponent } from './index/index.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { LoginComponent } from './login/login.component';
     VerifyEmailAddressComponent,
     PaymentsComponent,
     LoginComponent,
-        DriverpanelComponent
+        DriverpanelComponent,
+        IndexComponent,
+        ContactusComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

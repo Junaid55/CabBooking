@@ -1,18 +1,19 @@
-<section class="vh-100" style="background-color: #eee;">
+<div class="main-container">
+  <section class="vh-100" style="background-color: #eee">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-lg-12 col-xl-10">
-          <div class="card text-black" style="border-radius: 25px;">
+        <div class="col-lg-8 col-xl-15">
+          <div class="card text-black" style="border-radius: 25px">
             <div class="card-body p-md-5">
               <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-  
-                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Driver Sign up</p>
-                
-                <div >
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mt-1">
+                    Driver Sign up
+                  </p>
+                  <div>
                   <form [formGroup]="driverForm" (ngSubmit)="OnSubmit()">
 
-                    <mat-form-field appearance="fill" style="margin-right: 10px;" >
+                    <mat-form-field appearance="fill"  >
                         <mat-label>FullName</mat-label>
                         <mat-icon matSuffix class="material-icon">people</mat-icon>
                         <input matInput class="input" placeholder="Enter FullName" formControlName = "name">
@@ -35,7 +36,7 @@
                         <mat-error *ngIf="driverForm.controls['mob'].invalid && driverForm.controls['mob'].hasError('required')">You must enter a Mobile No.</mat-error>
                     </mat-form-field>
 
-                    <mat-form-field appearance="fill" style="margin-right: 10px;">
+                    <mat-form-field appearance="fill" >
                         <mat-label>DOB</mat-label>
                         <input matInput [matDatepicker]="picker" formControlName = "dob">
                         <mat-hint>MM/DD/YYYY</mat-hint>
@@ -108,3 +109,4 @@
       </div>
     </div>
   </section>
+</div>

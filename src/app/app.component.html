@@ -1,1 +1,26 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+   
+    <mat-toolbar color="primary">
+       
+        <a mat-button routerLink="home" routerLinkActive="active"> Home</a>
+        <a mat-button routerLink="login" routerLinkActive="active"> Log In</a>
+
+   
+          <button mat-button [matMenuTriggerFor]="menu">Register         
+            </button>
+          
+          <mat-menu #menu="matMenu">
+          
+            <a mat-menu-item routerLink="customer-register" >User Register</a>
+          
+            <mat-divider></mat-divider>
+          
+            <a mat-menu-item routerLink="driver-register">Driver Register</a>
+          
+          </mat-menu>
+          <a mat-button routerLink="contactus" routerLinkActive="active">Contact us</a> 
+    </mat-toolbar>    
+   
+     <router-outlet></router-outlet>     
+</mat-sidenav-container>
+
