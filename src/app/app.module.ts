@@ -25,6 +25,10 @@ import { environment } from '../environments/environment';
 import { VerifyEmailAddressComponent } from './verify-email-address/verify-email-address.component';
 import { PaymentsComponent } from './payments/payments.component';
 import { LoginComponent } from './login/login.component';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
+import { AdmindriverComponent } from './admindriver/admindriver.component';
+import { AdminridesComponent } from './adminrides/adminrides.component';
+import { AdminusersComponent } from './adminusers/adminusers.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { LoginComponent } from './login/login.component';
     VerifyEmailAddressComponent,
     PaymentsComponent,
     LoginComponent,
-        DriverpanelComponent
+        DriverpanelComponent,
+        AdminpanelComponent,
+        AdmindriverComponent,
+        AdminridesComponent,
+        AdminusersComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
