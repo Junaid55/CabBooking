@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DriverComponent } from './driver/driver.component';
 import { DriverRegisteredDialogComponent } from './driver-registered-dialog/driver-registered-dialog.component';
+import { DriverpanelComponent } from './driverpanel/driverpanel.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { DriverRegisteredDialogComponent } from './driver-registered-dialog/driv
         AppComponent,
         CustomerComponent,
         DriverComponent,
-        DriverRegisteredDialogComponent
+        DriverRegisteredDialogComponent,
+        DriverpanelComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
