@@ -119,6 +119,30 @@
       "user_id": 2,
       "amount": 303,
       "id": 6
+    },
+    {
+      "pickup": "Satellite Junction Dewas Naka, Satellite Junction, AB Rd, Dewas Naka, Lasudia Mori, Indore, Madhya Pradesh 453771, India",
+      "drop": "MVPC+8WC, Indrapuri Colony, Davv Takshila Parisar, Indore, Madhya Pradesh 452020, India",
+      "driver_id": 1,
+      "user_id": 1,
+      "amount": 184,
+      "id": 7
+    },
+    {
+      "pickup": "Dubai - United Arab Emirates",
+      "drop": "Sydney NSW, Australia",
+      "driver_id": 3,
+      "user_id": 1,
+      "amount": 315,
+      "id": 8
+    },
+    {
+      "pickup": "Terminal 3, Indira Gandhi International Airport, New Delhi, Delhi 110037, India",
+      "drop": "Hyderabad, Telangana, India",
+      "driver_id": 2,
+      "user_id": 1,
+      "amount": 169,
+      "id": 9
     }
   ],
   "Driverpost": [

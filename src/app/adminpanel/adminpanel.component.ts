@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { AdmindriverComponent } from '../admindriver/admindriver.component';
 import { AdminridesComponent } from '../adminrides/adminrides.component';
 import { AdminusersComponent } from '../adminusers/adminusers.component';
+import { AuthService } from '../shared/services/auth.service';
 import { DriverService } from '../shared/services/driver.service';
 
 @Component({
@@ -12,7 +13,7 @@ import { DriverService } from '../shared/services/driver.service';
 })
 export class AdminpanelComponent {
 
-  constructor(private cs:DriverService,private dialog:MatDialog){}
+  constructor(private cs:DriverService, public authService:AuthService,private dialog:MatDialog){}
   total_ride:number=0;
   total_amount=0;
   total_drivers=0;

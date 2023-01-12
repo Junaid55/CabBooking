@@ -47,7 +47,7 @@
 
 .demo
 {
-      background-image: url('../../../assets/nbg.png'); 
+      background-image: url('../../assets/nbg.png'); 
     
     /* background-size: cover; */
       }
@@ -58,7 +58,7 @@
         }
       
       .example-header-image {
-        background-image: url('../../../assets/download.jpg');
+        /* background-image: url('../../assets/download.jpg'); */
         background-size: cover;
       }
       .container {

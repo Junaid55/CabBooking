@@ -7,12 +7,14 @@ import {
 } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 import { CustomerForm, LoginUser, User } from '../models';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
   userData: any; // Save logged in user data
+  loginSubject = new BehaviorSubject<boolean>(false);
 
   constructor(
     public afs: AngularFirestore, // Inject Firestore service
@@ -163,9 +165,10 @@ export class AuthService {
 
   // Sign out
   SignOut() {
+    this.loginSubject.next(false);
     return this.afAuth.signOut().then(() => {
       localStorage.removeItem('user');
-      this.router.navigate(['']);
+      this.router.navigate(['home']);
     });
   }
 }

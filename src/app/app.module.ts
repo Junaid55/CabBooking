@@ -23,7 +23,6 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { VerifyEmailAddressComponent } from './verify-email-address/verify-email-address.component';
-import { PaymentsComponent } from './payments/payments.component';
 import { LoginComponent } from './login/login.component';
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { AdmindriverComponent } from './admindriver/admindriver.component';
@@ -31,6 +30,7 @@ import { AdminridesComponent } from './adminrides/adminrides.component';
 import { AdminusersComponent } from './adminusers/adminusers.component';
 import { IndexComponent } from './index/index.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,6 @@ import { ContactusComponent } from './contactus/contactus.component';
     CarVidComponent,
     RideConfirmComponent,
     VerifyEmailAddressComponent,
-    PaymentsComponent,
     LoginComponent,
         DriverpanelComponent,
         AdminpanelComponent,
@@ -51,7 +50,8 @@ import { ContactusComponent } from './contactus/contactus.component';
         AdminridesComponent,
         AdminusersComponent,
         IndexComponent,
-        ContactusComponent
+        ContactusComponent,
+        PaymentComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

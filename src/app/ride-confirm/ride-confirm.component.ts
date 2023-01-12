@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { CarVidComponent } from '../car-vid/car-vid.component';
 import { RideDetails } from '../shared/models';
 import { RideServiceService } from '../shared/services/ride-service.service';
@@ -33,8 +34,6 @@ export class RideConfirmComponent implements OnInit{
     carno: ""
 
   }
-
-  
 
   ngOnInit(): void {
 

@@ -9,6 +9,8 @@ import { AuthGuard } from './shared/guard/auth.guard';
 import { DriverpanelComponent } from './driverpanel/driverpanel.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { IndexComponent } from './index/index.component';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
+import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
   { path: 'contactus', component: ContactusComponent },
@@ -18,7 +20,9 @@ const routes: Routes = [
   {path:"driver-register", component:DriverComponent},
   {path:"customer-register", component:CustomerComponent},
   {path:"book-ride", component:HomeComponent, canActivate:[AuthGuard] },
-  {path:"driver-dashboard", component:DriverpanelComponent, canActivate:[AuthGuard]}
+  {path:"driver-dashboard", component:DriverpanelComponent, canActivate:[AuthGuard]},
+  {path:'admin-panel', component:AdminpanelComponent, canActivate:[AuthGuard]},
+  {path:'payment', component:PaymentComponent, canActivate:[AuthGuard]}
 ];
 
 @NgModule({
