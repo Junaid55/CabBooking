@@ -43,7 +43,7 @@ export class DialogBookingFormComponent implements AfterViewInit{
  
 
   randomDriver() { 
-    return Math.random() * (5 - 1) + 1;
+    return Math.random() * (3 - 1) + 1;
 }
 
 randomAmount() { 

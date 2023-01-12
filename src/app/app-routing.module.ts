@@ -13,6 +13,7 @@ import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
+  {path:"", component:IndexComponent},
   { path: 'contactus', component: ContactusComponent },
   { path: 'home', component: IndexComponent },
   {path:"login", component:LoginComponent},

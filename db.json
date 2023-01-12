@@ -1,102 +1,6 @@
 {
   "rideDB": [
     {
-      "pickup": "Indore, Madhya Pradesh, India",
-      "drop": "Kartavya Path, India Gate, New Delhi, Delhi 110001, India",
-      "driver_id": 3,
-      "user_id": {
-        "uid": "zfxflcxvCHMXHn5Hh9x3uejRsa93",
-        "email": "junaidqureshi165@gmail.com",
-        "emailVerified": true,
-        "isAnonymous": false,
-        "providerData": [
-          {
-            "providerId": "password",
-            "uid": "junaidqureshi165@gmail.com",
-            "displayName": null,
-            "email": "junaidqureshi165@gmail.com",
-            "phoneNumber": null,
-            "photoURL": null
-          }
-        ],
-        "stsTokenManager": {
-          "refreshToken": "AOkPPWQH-_UfVCN6UVM8-i72R8mExzTl2Qak8UDvDzHmfDF0mrzHJxFT8DJEn5EdaqSGV6TKCEogYXEjPKADT1YhoGPu01UnFUZxE819gYxRy9eipbpAn6xkEqdqmlWPBNcNE8IPImcZWygwG0RDWV4kxd5IWxYVOpsUbC1kmIMvyws9cdoAu6-PcL_BOSXsxnBUdpkmwE5Y9dZTMHqJwyMdtRhdHx1UPnCAFXRlY3taAbij7DJrwZ4",
-          "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImNlOWI4ODBmODE4MmRkYTU1N2Y3YzcwZTIwZTRlMzcwZTNkMTI3NDciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY2FiYm9va2luZy1kZDI3MSIsImF1ZCI6ImNhYmJvb2tpbmctZGQyNzEiLCJhdXRoX3RpbWUiOjE2NzM0MzEzNTcsInVzZXJfaWQiOiJ6ZnhmbGN4dkNITVhIbjVIaDl4M3VlalJzYTkzIiwic3ViIjoiemZ4ZmxjeHZDSE1YSG41SGg5eDN1ZWpSc2E5MyIsImlhdCI6MTY3MzQzMTM1NywiZXhwIjoxNjczNDM0OTU3LCJlbWFpbCI6Imp1bmFpZHF1cmVzaGkxNjVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsianVuYWlkcXVyZXNoaTE2NUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.cPNNjYYMKpahoIkU5pbyzSLHe6l-lvXkQr6yOMXU6-SymhHb8Pv6i5b94QtsRqmCw1OgiXfdj97oj3GQraG58axQBDrW8UerFL6zhvRSyXBvGvLVyNA3uQc3tFokwav_sJJdS22rYbwodiaaCPv0cA07wZ6xUeC0JoueVHD6Yd-poQcxu5hXsU7UNrMzAYUIzVjx2jONY31Ean5Ozeb98QC3lSsP0cHGh9LCN48uqoYNs4ZWDgYeBEHEQxDSiFUfC4sbIO4Y1roTW-uHVw4xqwECbvFFIY6ByS2HW_CZ9lUH_Gms8ICimuE4N81SRcjKsBPbgxBXxoCZ3M0ggw0fOw",
-          "expirationTime": 1673434958114
-        },
-        "createdAt": "1673431215916",
-        "lastLoginAt": "1673431357960",
-        "apiKey": "AIzaSyCr3g2JinRvQKKOfyYzcTbIQltPAqxbeMw",
-        "appName": "[DEFAULT]"
-      },
-      "amount": 159,
-      "id": 1
-    },
-    {
-      "pickup": "Indore, Madhya Pradesh, India",
-      "drop": "Ujjain, Madhya Pradesh, India",
-      "driver_id": 4,
-      "user_id": {
-        "uid": "nXLDk0isjkcxOgFiAkahLh6qdwI3",
-        "email": "divyavyas1205@gmail.com",
-        "emailVerified": true,
-        "isAnonymous": false,
-        "providerData": [
-          {
-            "providerId": "password",
-            "uid": "divyavyas1205@gmail.com",
-            "displayName": null,
-            "email": "divyavyas1205@gmail.com",
-            "phoneNumber": null,
-            "photoURL": null
-          }
-        ],
-        "stsTokenManager": {
-          "refreshToken": "AOkPPWRLWq4eA1BOn2qtPhpNPLoKjtmGb1aSI5H6oJDfMcd2AAXLgoMzVLAMIIGct1bY3JsVB8U7nXcA_x07iBtd9ZRyG7kNw-McJWR-6-KapPcRl0Yv_i-tVQ2qtcuGm0wqRrZj_-H5eqpAwZ3N3uoG6VoRywgOEAdxIDPvXdnfReqmZ_2NLC6gCCMdBBcUn2nSJD5-WRDS8YWVFHJnd0zfzBFwzADfow",
-          "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImNlOWI4ODBmODE4MmRkYTU1N2Y3YzcwZTIwZTRlMzcwZTNkMTI3NDciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY2FiYm9va2luZy1kZDI3MSIsImF1ZCI6ImNhYmJvb2tpbmctZGQyNzEiLCJhdXRoX3RpbWUiOjE2NzM0MzE3NTMsInVzZXJfaWQiOiJuWExEazBpc2prY3hPZ0ZpQWthaExoNnFkd0kzIiwic3ViIjoiblhMRGswaXNqa2N4T2dGaUFrYWhMaDZxZHdJMyIsImlhdCI6MTY3MzQzMTc1MywiZXhwIjoxNjczNDM1MzUzLCJlbWFpbCI6ImRpdnlhdnlhczEyMDVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZGl2eWF2eWFzMTIwNUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.UFxrs4POM9P9STKPDFxwlkatODi7v5JTH1SNfRHTd1bbCKrHvMCAyadf052wpTrkvKUWw-NdCrjJN-plroNebSzGngWgLEiuq7rG0wkz4uhyp0oI6_ppbACeVLaV2T_qCNV60tzxxdmy6-iJzQIL7jusTcu1WYPLq_PRQofGuDq8OXt78GwMHsZVtAZJLQguPTcs6GmaIOtCWExxD8LEI3V9T_ERCcTAkmmhhqf93GSRnDNXoPNyW_DEh0xh2cj4bQT20jPFxskePZJ9J9o0eAZAIrWIhbs3_IrGVfmf3jSsGYNbFjjHTqKYCWrJzGZLbUt0MRGCJ1KIot60BEigaw",
-          "expirationTime": 1673435353984
-        },
-        "createdAt": "1673429824772",
-        "lastLoginAt": "1673431753787",
-        "apiKey": "AIzaSyCr3g2JinRvQKKOfyYzcTbIQltPAqxbeMw",
-        "appName": "[DEFAULT]"
-      },
-      "amount": 241,
-      "id": 2
-    },
-    {
-      "pickup": "New York, NY, USA",
-      "drop": "London, UK",
-      "driver_id": 2,
-      "user_id": {
-        "uid": "zfxflcxvCHMXHn5Hh9x3uejRsa93",
-        "email": "junaidqureshi165@gmail.com",
-        "emailVerified": true,
-        "isAnonymous": false,
-        "providerData": [
-          {
-            "providerId": "password",
-            "uid": "junaidqureshi165@gmail.com",
-            "displayName": null,
-            "email": "junaidqureshi165@gmail.com",
-            "phoneNumber": null,
-            "photoURL": null
-          }
-        ],
-        "stsTokenManager": {
-          "refreshToken": "AOkPPWRG6IJv0HDblbzJRcWenpsp4AqvW9NI8l2mVzypacXmAXQ_3vu-kkn-Ect0gJidWG8OXMCJACy6-g219i1RsgcISJSTO50gPgs6thUCZU07WihX6vcb1vrC30eFVvN0HrL-mjLYia_5tOxgtZs2BvmY6BbT0W3ihKY1A0ww4PoJhQyNNEifcFn3CpumVoijjXvMxvDCn0imH6hOztyFRy7iWlzmMh5pG4lsPk8O4zv87UrJwmQ",
-          "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImY1NWU0ZDkxOGE0ODY0YWQxMzUxMDViYmRjMDEwYWY5Njc5YzM0MTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY2FiYm9va2luZy1kZDI3MSIsImF1ZCI6ImNhYmJvb2tpbmctZGQyNzEiLCJhdXRoX3RpbWUiOjE2NzM0MzUyNTAsInVzZXJfaWQiOiJ6ZnhmbGN4dkNITVhIbjVIaDl4M3VlalJzYTkzIiwic3ViIjoiemZ4ZmxjeHZDSE1YSG41SGg5eDN1ZWpSc2E5MyIsImlhdCI6MTY3MzQzNTI1MCwiZXhwIjoxNjczNDM4ODUwLCJlbWFpbCI6Imp1bmFpZHF1cmVzaGkxNjVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsianVuYWlkcXVyZXNoaTE2NUBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.AwD4runP1eTzW3-TbzFibXDhPIvjmD8YRg7Us1qtWnxt8mS8G0TCJxPC5zEDpvFLCjZ7b_RQ52920RisK7NMiHASW-KAH3B9AlhoE6IvoZQXMr23XEBdIC1C4DG8qUDiaBYzgpB-m8_QmODsvMoOJPv70uiCe8NgXFVEsJQd0_eQR1MqdOqGISFtsp35PZxcKv4SBtMTgDlOJfHVXXOVvTHeh-_KE3g3CpGl-XKp5hIas3c9-HVYyqg3nUJU44XU38mFnhcLEiB4qPK6Pjiosf-n-age1sm-tb5fHlt8JufSKn4LGUSB0Rbmmgw0QQdWsy7icV1beQ_evwUfJVHF3g",
-          "expirationTime": 1673438850563
-        },
-        "createdAt": "1673431215916",
-        "lastLoginAt": "1673435250660",
-        "apiKey": "AIzaSyCr3g2JinRvQKKOfyYzcTbIQltPAqxbeMw",
-        "appName": "[DEFAULT]"
-      },
-      "amount": 282,
-      "id": 3
-    },
-    {
       "pickup": "Jabalpur, Madhya Pradesh, India",
       "drop": "Jakarta, Indonesia",
       "driver_id": 4,
@@ -143,6 +47,38 @@
       "user_id": 1,
       "amount": 169,
       "id": 9
+    },
+    {
+      "pickup": "Indore, Madhya Pradesh, India",
+      "drop": "Ankpat Marg, Urdupura, Ujjain, Madhya Pradesh 456001, India",
+      "driver_id": 3,
+      "user_id": 2,
+      "amount": 155,
+      "id": 10
+    },
+    {
+      "pickup": "Udaipur, Rajasthan, India",
+      "drop": "Jaipur, Rajasthan, India",
+      "driver_id": 1,
+      "user_id": 3,
+      "amount": 246,
+      "id": 11
+    },
+    {
+      "pickup": "Vijay Nagar, Indore, Madhya Pradesh 452010, India",
+      "drop": "New Palasia, Indore, Madhya Pradesh 452001, India",
+      "driver_id": 2,
+      "user_id": 1,
+      "amount": 297,
+      "id": 12
+    },
+    {
+      "pickup": "Ratlam, Madhya Pradesh 457001, India",
+      "drop": "Ujjain, Madhya Pradesh, India",
+      "driver_id": 2,
+      "user_id": 2,
+      "amount": 333,
+      "id": 13
     }
   ],
   "Driverpost": [
@@ -169,6 +105,18 @@
       "gender": "M",
       "dob": "1992-12-11T18:30:00.000Z",
       "mob": "9876543201"
+    },
+    {
+      "id": 3,
+      "name": "Divya V",
+      "email": "divya.vyas2000@gmail.com",
+      "carname": "Indigo",
+      "carno": "MP 09 ER 4567",
+      "rate": 15,
+      "password": "qwertyuiop",
+      "gender": "F",
+      "dob": "2001-06-03T18:30:00.000Z",
+      "mob": "9876543120"
     }
   ],
   "Customer": [
@@ -185,6 +133,13 @@
       "email": "junaidqureshi165@gmail.com",
       "password": "qwertyuiop",
       "mob": "9876543210"
+    },
+    {
+      "id": 3,
+      "name": "Ritika M",
+      "email": "ritika.maheshwari1601@gmail.com",
+      "password": "qwertyuiop",
+      "mob": "8907654321"
     }
   ]
 }
